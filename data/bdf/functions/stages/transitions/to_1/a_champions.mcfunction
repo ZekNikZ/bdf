@@ -1,5 +1,5 @@
 # Only allow dragon to fly and charge players
-execute unless entity @e[type=minecraft:ender_dragon,nbt={DragonPhase:0}] unless entity @e[type=minecraft:ender_dragon,nbt={DragonPhase:1}] run data merge entity @e[type=minecraft:ender_dragon,limit=1] {DragonPhase:0}
+execute unless entity @e[type=minecraft:ender_dragon,nbt={DragonPhase:0}] unless entity @e[type=minecraft:ender_dragon,nbt={DragonPhase:1}] as @e[type=minecraft:ender_dragon] run data merge entity @s {DragonPhase:0}
 
 # Boss bars
 bossbar set bdf:shield name "Shield Protectors"
@@ -46,13 +46,14 @@ summon minecraft:armor_stand 0 100 0 {Marker:1b,Tags:["bdf_spawn_helper"]}
 summon minecraft:armor_stand 0 100 0 {Marker:1b,Tags:["bdf_spawn_helper"]}
 summon minecraft:armor_stand 0 100 0 {Marker:1b,Tags:["bdf_spawn_helper"]}
 
-spreadplayers 0 0 40 40 under 70 false @e[tag=bdf_spawn_helper]
+spreadplayers 0 0 45 50 under 70 false @e[tag=bdf_spawn_helper]
 
 # Spawn champions
-execute if score enemy_type bdf_state matches 0 as @e[tag=bdf_spawn_helper] at @s run function bdf:stages/helpers/mobs/spawn_undead_champion
+execute if score enemy_type bdf_state matches 0 as @e[tag=bdf_spawn_helper] at @s run function bdf:helpers/spawn/undead/champion
 
 # Spawn adds
-execute if score enemy_type bdf_state matches 0 as @e[tag=bdf_spawn_helper] at @s run function bdf:stages/helpers/mobs/spawn_undead
-execute if score enemy_type bdf_state matches 0 positioned 0 100 0 in minecraft:the_end run function bdf:stages/helpers/mobs/spawn_undead
+execute if score enemy_type bdf_state matches 0 as @e[tag=bdf_spawn_helper] at @s run function bdf:helpers/spawn/undead/small
+execute if score enemy_type bdf_state matches 0 as @e[tag=bdf_spawn_helper] at @s run function bdf:helpers/spawn/undead/small
+execute if score enemy_type bdf_state matches 0 positioned 0 100 0 in minecraft:the_end run function bdf:helpers/spawn/undead/large
 
 kill @e[tag=bdf_spawn_helper]

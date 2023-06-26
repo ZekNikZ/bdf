@@ -1,5 +1,5 @@
 # Bossbar visibility
-bossbar set bdf:shield players @a
+bossbar set bdf:shield players @a[predicate=bdf:in_the_end]
 execute at @e[tag=bdf_hotspot,scores={bdf_minions=1}] run bossbar set bdf:target_1 players @a[distance=..10]
 execute at @e[tag=bdf_hotspot,scores={bdf_minions=2}] run bossbar set bdf:target_2 players @a[distance=..10]
 execute at @e[tag=bdf_hotspot,scores={bdf_minions=3}] run bossbar set bdf:target_3 players @a[distance=..10]
@@ -76,15 +76,53 @@ execute as @e[tag=bdf_hotspot,scores={bdf_minions=4}] at @s unless entity @e[tag
 execute as @e[tag=bdf_hotspot,scores={bdf_minions=5}] at @s unless entity @e[tag=bdf_minion,distance=..10] as @a[distance=..5] run scoreboard players add #objective_5 bdf_minions 1
 execute as @e[tag=bdf_hotspot,scores={bdf_minions=6}] at @s unless entity @e[tag=bdf_minion,distance=..10] as @a[distance=..5] run scoreboard players add #objective_6 bdf_minions 1
 
+execute if score #objective_1 bdf_minions matches 600.. as @e[tag=bdf_hotspot,scores={bdf_minions=1}] at @s run function bdf:helpers/spawn_firework
+execute if score #objective_1 bdf_minions matches 600.. as @e[tag=bdf_hotspot,scores={bdf_minions=1}] at @s run function bdf:helpers/play_success_sound
 execute if score #objective_1 bdf_minions matches 600.. as @e[tag=bdf_hotspot,scores={bdf_minions=1}] run kill @s
 execute if score #objective_1 bdf_minions matches 600.. as @e[tag=bdf_hotspot_display,scores={bdf_minions=1}] run kill @s
+execute if score #objective_2 bdf_minions matches 600.. as @e[tag=bdf_hotspot,scores={bdf_minions=2}] at @s run function bdf:helpers/spawn_firework
+execute if score #objective_2 bdf_minions matches 600.. as @e[tag=bdf_hotspot,scores={bdf_minions=2}] at @s run function bdf:helpers/play_success_sound
 execute if score #objective_2 bdf_minions matches 600.. as @e[tag=bdf_hotspot,scores={bdf_minions=2}] run kill @s
 execute if score #objective_2 bdf_minions matches 600.. as @e[tag=bdf_hotspot_display,scores={bdf_minions=2}] run kill @s
+execute if score #objective_3 bdf_minions matches 600.. as @e[tag=bdf_hotspot,scores={bdf_minions=3}] at @s run function bdf:helpers/spawn_firework
+execute if score #objective_3 bdf_minions matches 600.. as @e[tag=bdf_hotspot,scores={bdf_minions=3}] at @s run function bdf:helpers/play_success_sound
 execute if score #objective_3 bdf_minions matches 600.. as @e[tag=bdf_hotspot,scores={bdf_minions=3}] run kill @s
 execute if score #objective_3 bdf_minions matches 600.. as @e[tag=bdf_hotspot_display,scores={bdf_minions=3}] run kill @s
+execute if score #objective_4 bdf_minions matches 600.. as @e[tag=bdf_hotspot,scores={bdf_minions=4}] at @s run function bdf:helpers/spawn_firework
+execute if score #objective_4 bdf_minions matches 600.. as @e[tag=bdf_hotspot,scores={bdf_minions=4}] at @s run function bdf:helpers/play_success_sound
 execute if score #objective_4 bdf_minions matches 600.. as @e[tag=bdf_hotspot,scores={bdf_minions=4}] run kill @s
 execute if score #objective_4 bdf_minions matches 600.. as @e[tag=bdf_hotspot_display,scores={bdf_minions=4}] run kill @s
+execute if score #objective_5 bdf_minions matches 600.. as @e[tag=bdf_hotspot,scores={bdf_minions=5}] at @s run function bdf:helpers/spawn_firework
+execute if score #objective_5 bdf_minions matches 600.. as @e[tag=bdf_hotspot,scores={bdf_minions=5}] at @s run function bdf:helpers/play_success_sound
 execute if score #objective_5 bdf_minions matches 600.. as @e[tag=bdf_hotspot,scores={bdf_minions=5}] run kill @s
 execute if score #objective_5 bdf_minions matches 600.. as @e[tag=bdf_hotspot_display,scores={bdf_minions=5}] run kill @s
+execute if score #objective_6 bdf_minions matches 600.. as @e[tag=bdf_hotspot,scores={bdf_minions=6}] at @s run function bdf:helpers/spawn_firework
+execute if score #objective_6 bdf_minions matches 600.. as @e[tag=bdf_hotspot,scores={bdf_minions=6}] at @s run function bdf:helpers/play_success_sound
 execute if score #objective_6 bdf_minions matches 600.. as @e[tag=bdf_hotspot,scores={bdf_minions=6}] run kill @s
 execute if score #objective_6 bdf_minions matches 600.. as @e[tag=bdf_hotspot_display,scores={bdf_minions=6}] run kill @s
+
+# Spawn more mobs
+execute if score enemy_type bdf_state matches 0 if score #objective_1 bdf_minions matches 300.. unless entity @e[tag=bdf_hotspot,tag=bdf_hotspot_50p,scores={bdf_minions=1}] as @e[tag=bdf_hotspot,scores={bdf_minions=1}] at @s run function bdf:helpers/spawn/undead/away
+execute if score enemy_type bdf_state matches 0 if score #objective_1 bdf_minions matches 300.. unless entity @e[tag=bdf_hotspot,tag=bdf_hotspot_50p,scores={bdf_minions=1}] as @e[tag=bdf_hotspot,scores={bdf_minions=1}] at @s run tag @s add bdf_hotspot_50p
+execute if score enemy_type bdf_state matches 0 if score #objective_1 bdf_minions matches 510.. unless entity @e[tag=bdf_hotspot,tag=bdf_hotspot_85p,scores={bdf_minions=1}] as @e[tag=bdf_hotspot,scores={bdf_minions=1}] at @s run function bdf:helpers/spawn/undead/away
+execute if score enemy_type bdf_state matches 0 if score #objective_1 bdf_minions matches 510.. unless entity @e[tag=bdf_hotspot,tag=bdf_hotspot_85p,scores={bdf_minions=1}] as @e[tag=bdf_hotspot,scores={bdf_minions=1}] at @s run tag @s add bdf_hotspot_85p
+execute if score enemy_type bdf_state matches 0 if score #objective_2 bdf_minions matches 300.. unless entity @e[tag=bdf_hotspot,tag=bdf_hotspot_50p,scores={bdf_minions=2}] as @e[tag=bdf_hotspot,scores={bdf_minions=2}] at @s run function bdf:helpers/spawn/undead/away
+execute if score enemy_type bdf_state matches 0 if score #objective_2 bdf_minions matches 300.. unless entity @e[tag=bdf_hotspot,tag=bdf_hotspot_50p,scores={bdf_minions=2}] as @e[tag=bdf_hotspot,scores={bdf_minions=2}] at @s run tag @s add bdf_hotspot_50p
+execute if score enemy_type bdf_state matches 0 if score #objective_2 bdf_minions matches 510.. unless entity @e[tag=bdf_hotspot,tag=bdf_hotspot_85p,scores={bdf_minions=2}] as @e[tag=bdf_hotspot,scores={bdf_minions=2}] at @s run function bdf:helpers/spawn/undead/away
+execute if score enemy_type bdf_state matches 0 if score #objective_2 bdf_minions matches 510.. unless entity @e[tag=bdf_hotspot,tag=bdf_hotspot_85p,scores={bdf_minions=2}] as @e[tag=bdf_hotspot,scores={bdf_minions=2}] at @s run tag @s add bdf_hotspot_85p
+execute if score enemy_type bdf_state matches 0 if score #objective_3 bdf_minions matches 300.. unless entity @e[tag=bdf_hotspot,tag=bdf_hotspot_50p,scores={bdf_minions=3}] as @e[tag=bdf_hotspot,scores={bdf_minions=3}] at @s run function bdf:helpers/spawn/undead/away
+execute if score enemy_type bdf_state matches 0 if score #objective_3 bdf_minions matches 300.. unless entity @e[tag=bdf_hotspot,tag=bdf_hotspot_50p,scores={bdf_minions=3}] as @e[tag=bdf_hotspot,scores={bdf_minions=3}] at @s run tag @s add bdf_hotspot_50p
+execute if score enemy_type bdf_state matches 0 if score #objective_3 bdf_minions matches 510.. unless entity @e[tag=bdf_hotspot,tag=bdf_hotspot_85p,scores={bdf_minions=3}] as @e[tag=bdf_hotspot,scores={bdf_minions=3}] at @s run function bdf:helpers/spawn/undead/away
+execute if score enemy_type bdf_state matches 0 if score #objective_3 bdf_minions matches 510.. unless entity @e[tag=bdf_hotspot,tag=bdf_hotspot_85p,scores={bdf_minions=3}] as @e[tag=bdf_hotspot,scores={bdf_minions=3}] at @s run tag @s add bdf_hotspot_85p
+execute if score enemy_type bdf_state matches 0 if score #objective_4 bdf_minions matches 300.. unless entity @e[tag=bdf_hotspot,tag=bdf_hotspot_50p,scores={bdf_minions=4}] as @e[tag=bdf_hotspot,scores={bdf_minions=4}] at @s run function bdf:helpers/spawn/undead/away
+execute if score enemy_type bdf_state matches 0 if score #objective_4 bdf_minions matches 300.. unless entity @e[tag=bdf_hotspot,tag=bdf_hotspot_50p,scores={bdf_minions=4}] as @e[tag=bdf_hotspot,scores={bdf_minions=4}] at @s run tag @s add bdf_hotspot_50p
+execute if score enemy_type bdf_state matches 0 if score #objective_4 bdf_minions matches 510.. unless entity @e[tag=bdf_hotspot,tag=bdf_hotspot_85p,scores={bdf_minions=4}] as @e[tag=bdf_hotspot,scores={bdf_minions=4}] at @s run function bdf:helpers/spawn/undead/away
+execute if score enemy_type bdf_state matches 0 if score #objective_4 bdf_minions matches 510.. unless entity @e[tag=bdf_hotspot,tag=bdf_hotspot_85p,scores={bdf_minions=4}] as @e[tag=bdf_hotspot,scores={bdf_minions=4}] at @s run tag @s add bdf_hotspot_85p
+execute if score enemy_type bdf_state matches 0 if score #objective_5 bdf_minions matches 300.. unless entity @e[tag=bdf_hotspot,tag=bdf_hotspot_50p,scores={bdf_minions=5}] as @e[tag=bdf_hotspot,scores={bdf_minions=5}] at @s run function bdf:helpers/spawn/undead/away
+execute if score enemy_type bdf_state matches 0 if score #objective_5 bdf_minions matches 300.. unless entity @e[tag=bdf_hotspot,tag=bdf_hotspot_50p,scores={bdf_minions=5}] as @e[tag=bdf_hotspot,scores={bdf_minions=5}] at @s run tag @s add bdf_hotspot_50p
+execute if score enemy_type bdf_state matches 0 if score #objective_5 bdf_minions matches 510.. unless entity @e[tag=bdf_hotspot,tag=bdf_hotspot_85p,scores={bdf_minions=5}] as @e[tag=bdf_hotspot,scores={bdf_minions=5}] at @s run function bdf:helpers/spawn/undead/away
+execute if score enemy_type bdf_state matches 0 if score #objective_5 bdf_minions matches 510.. unless entity @e[tag=bdf_hotspot,tag=bdf_hotspot_85p,scores={bdf_minions=5}] as @e[tag=bdf_hotspot,scores={bdf_minions=5}] at @s run tag @s add bdf_hotspot_85p
+execute if score enemy_type bdf_state matches 0 if score #objective_6 bdf_minions matches 300.. unless entity @e[tag=bdf_hotspot,tag=bdf_hotspot_50p,scores={bdf_minions=6}] as @e[tag=bdf_hotspot,scores={bdf_minions=6}] at @s run function bdf:helpers/spawn/undead/away
+execute if score enemy_type bdf_state matches 0 if score #objective_6 bdf_minions matches 300.. unless entity @e[tag=bdf_hotspot,tag=bdf_hotspot_50p,scores={bdf_minions=6}] as @e[tag=bdf_hotspot,scores={bdf_minions=6}] at @s run tag @s add bdf_hotspot_50p
+execute if score enemy_type bdf_state matches 0 if score #objective_6 bdf_minions matches 510.. unless entity @e[tag=bdf_hotspot,tag=bdf_hotspot_85p,scores={bdf_minions=6}] as @e[tag=bdf_hotspot,scores={bdf_minions=6}] at @s run function bdf:helpers/spawn/undead/away
+execute if score enemy_type bdf_state matches 0 if score #objective_6 bdf_minions matches 510.. unless entity @e[tag=bdf_hotspot,tag=bdf_hotspot_85p,scores={bdf_minions=6}] as @e[tag=bdf_hotspot,scores={bdf_minions=6}] at @s run tag @s add bdf_hotspot_85p

@@ -1,5 +1,5 @@
 # Bossbar visibility
-bossbar set bdf:shield players @a
+bossbar set bdf:shield players @a[predicate=bdf:in_the_end]
 execute at @e[tag=bdf_champion,scores={bdf_minions=1}] run bossbar set bdf:target_1 players @a[distance=..10]
 execute at @e[tag=bdf_champion,scores={bdf_minions=2}] run bossbar set bdf:target_2 players @a[distance=..10]
 execute at @e[tag=bdf_champion,scores={bdf_minions=3}] run bossbar set bdf:target_3 players @a[distance=..10]
