@@ -1,6 +1,3 @@
-# Only allow dragon to fly and charge players
-execute unless entity @e[type=minecraft:ender_dragon,nbt={DragonPhase:0}] unless entity @e[type=minecraft:ender_dragon,nbt={DragonPhase:1}] as @e[type=minecraft:ender_dragon] run data merge entity @s {DragonPhase:0}
-
 # Boss bars
 bossbar set bdf:shield name "Shield Hotspots"
 bossbar set bdf:shield color blue
@@ -62,3 +59,5 @@ scoreboard players set #objective_3 bdf_minions 0
 scoreboard players set #objective_4 bdf_minions 0
 scoreboard players set #objective_5 bdf_minions 0
 scoreboard players set #objective_6 bdf_minions 0
+
+tellraw @a[predicate=bdf:in_the_end] {"text":"The dragon put up a shield! Capture shield hotspots to break it!","color":"gold","italic":true}

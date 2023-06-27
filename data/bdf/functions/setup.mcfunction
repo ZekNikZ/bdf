@@ -26,8 +26,8 @@ execute as @e[tag=bdf_crystal_marker] at @s run setblock ~ ~-2 ~ minecraft:beaco
 execute as @e[tag=bdf_crystal_marker] at @s run fill ~-1 ~-3 ~-1 ~1 ~-3 ~1 minecraft:iron_block
 
 # Modify dragon health
-attribute @e[type=minecraft:ender_dragon,limit=1] minecraft:generic.max_health base set 1600
-data merge entity @e[type=ender_dragon,limit=1] {Health:1600}
+attribute @e[type=minecraft:ender_dragon,limit=1] minecraft:generic.max_health base set 2000
+data merge entity @e[type=ender_dragon,limit=1] {Health:2000}
 
 # Gamerules
 gamerule universalAnger true

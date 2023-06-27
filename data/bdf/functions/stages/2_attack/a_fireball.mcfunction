@@ -1,0 +1,1 @@
+execute as @e[type=minecraft:ender_dragon] run data modify entity @s DragonPhase set value 0

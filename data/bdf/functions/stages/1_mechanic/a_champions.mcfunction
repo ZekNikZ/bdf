@@ -1,3 +1,6 @@
+# Only allow dragon to fly and charge players
+execute unless entity @e[type=minecraft:ender_dragon,nbt={DragonPhase:0}] unless entity @e[type=minecraft:ender_dragon,nbt={DragonPhase:1}] as @e[type=minecraft:ender_dragon] run data merge entity @s {DragonPhase:0}
+
 # Bossbar visibility
 bossbar set bdf:shield players @a[predicate=bdf:in_the_end]
 execute at @e[tag=bdf_champion,scores={bdf_minions=1}] run bossbar set bdf:target_1 players @a[distance=..10]
@@ -20,6 +23,32 @@ execute as @e[tag=bdf_champion,scores={bdf_minions=3}] store result bossbar bdf:
 execute as @e[tag=bdf_champion,scores={bdf_minions=4}] store result bossbar bdf:target_4 value run data get entity @s Health
 execute as @e[tag=bdf_champion,scores={bdf_minions=5}] store result bossbar bdf:target_5 value run data get entity @s Health
 execute as @e[tag=bdf_champion,scores={bdf_minions=6}] store result bossbar bdf:target_6 value run data get entity @s Health
+
+# Kill effects
+tp @e[tag=bdf_champion_marker,scores={bdf_minions=1}] @e[tag=bdf_champion,scores={bdf_minions=1},limit=1]
+execute unless entity @e[tag=bdf_champion,scores={bdf_minions=1},limit=1] as @e[tag=bdf_champion_marker,scores={bdf_minions=1}] at @s run function bdf:helpers/spawn_firework
+execute unless entity @e[tag=bdf_champion,scores={bdf_minions=1},limit=1] as @e[tag=bdf_champion_marker,scores={bdf_minions=1}] at @s run function bdf:helpers/play_success_sound
+execute unless entity @e[tag=bdf_champion,scores={bdf_minions=1},limit=1] as @e[tag=bdf_champion_marker,scores={bdf_minions=1}] at @s run kill @s
+tp @e[tag=bdf_champion_marker,scores={bdf_minions=2}] @e[tag=bdf_champion,scores={bdf_minions=2},limit=1]
+execute unless entity @e[tag=bdf_champion,scores={bdf_minions=2},limit=1] as @e[tag=bdf_champion_marker,scores={bdf_minions=2}] at @s run function bdf:helpers/spawn_firework
+execute unless entity @e[tag=bdf_champion,scores={bdf_minions=2},limit=1] as @e[tag=bdf_champion_marker,scores={bdf_minions=2}] at @s run function bdf:helpers/play_success_sound
+execute unless entity @e[tag=bdf_champion,scores={bdf_minions=2},limit=1] as @e[tag=bdf_champion_marker,scores={bdf_minions=2}] at @s run kill @s
+tp @e[tag=bdf_champion_marker,scores={bdf_minions=3}] @e[tag=bdf_champion,scores={bdf_minions=3},limit=1]
+execute unless entity @e[tag=bdf_champion,scores={bdf_minions=3},limit=1] as @e[tag=bdf_champion_marker,scores={bdf_minions=3}] at @s run function bdf:helpers/spawn_firework
+execute unless entity @e[tag=bdf_champion,scores={bdf_minions=3},limit=1] as @e[tag=bdf_champion_marker,scores={bdf_minions=3}] at @s run function bdf:helpers/play_success_sound
+execute unless entity @e[tag=bdf_champion,scores={bdf_minions=3},limit=1] as @e[tag=bdf_champion_marker,scores={bdf_minions=3}] at @s run kill @s
+tp @e[tag=bdf_champion_marker,scores={bdf_minions=4}] @e[tag=bdf_champion,scores={bdf_minions=4},limit=1]
+execute unless entity @e[tag=bdf_champion,scores={bdf_minions=4},limit=1] as @e[tag=bdf_champion_marker,scores={bdf_minions=4}] at @s run function bdf:helpers/spawn_firework
+execute unless entity @e[tag=bdf_champion,scores={bdf_minions=4},limit=1] as @e[tag=bdf_champion_marker,scores={bdf_minions=4}] at @s run function bdf:helpers/play_success_sound
+execute unless entity @e[tag=bdf_champion,scores={bdf_minions=4},limit=1] as @e[tag=bdf_champion_marker,scores={bdf_minions=4}] at @s run kill @s
+tp @e[tag=bdf_champion_marker,scores={bdf_minions=5}] @e[tag=bdf_champion,scores={bdf_minions=5},limit=1]
+execute unless entity @e[tag=bdf_champion,scores={bdf_minions=5},limit=1] as @e[tag=bdf_champion_marker,scores={bdf_minions=5}] at @s run function bdf:helpers/spawn_firework
+execute unless entity @e[tag=bdf_champion,scores={bdf_minions=5},limit=1] as @e[tag=bdf_champion_marker,scores={bdf_minions=5}] at @s run function bdf:helpers/play_success_sound
+execute unless entity @e[tag=bdf_champion,scores={bdf_minions=5},limit=1] as @e[tag=bdf_champion_marker,scores={bdf_minions=5}] at @s run kill @s
+tp @e[tag=bdf_champion_marker,scores={bdf_minions=6}] @e[tag=bdf_champion,scores={bdf_minions=6},limit=1]
+execute unless entity @e[tag=bdf_champion,scores={bdf_minions=6},limit=1] as @e[tag=bdf_champion_marker,scores={bdf_minions=6}] at @s run function bdf:helpers/spawn_firework
+execute unless entity @e[tag=bdf_champion,scores={bdf_minions=6},limit=1] as @e[tag=bdf_champion_marker,scores={bdf_minions=6}] at @s run function bdf:helpers/play_success_sound
+execute unless entity @e[tag=bdf_champion,scores={bdf_minions=6},limit=1] as @e[tag=bdf_champion_marker,scores={bdf_minions=6}] at @s run kill @s
 
 # Objective
 title @a[predicate=bdf:in_the_end] actionbar ["",{"color":"gold","text":"Objective: "},{"color":"aqua","text":"defeat the dragon's champions"}]
