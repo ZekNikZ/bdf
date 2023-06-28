@@ -36,14 +36,14 @@ bossbar set bdf:target_6 color red
 scoreboard players reset * bdf_minions
 scoreboard players set #next_hotspot bdf_minions 1
 
-summon minecraft:armor_stand 0 100 0 {Marker:1b,Tags:["bdf_hotspot"],Invisible:1b}
-summon minecraft:armor_stand 0 100 0 {Marker:1b,Tags:["bdf_hotspot"],Invisible:1b}
-summon minecraft:armor_stand 0 100 0 {Marker:1b,Tags:["bdf_hotspot"],Invisible:1b}
-summon minecraft:armor_stand 0 100 0 {Marker:1b,Tags:["bdf_hotspot"],Invisible:1b}
-summon minecraft:armor_stand 0 100 0 {Marker:1b,Tags:["bdf_hotspot"],Invisible:1b}
-summon minecraft:armor_stand 0 100 0 {Marker:1b,Tags:["bdf_hotspot"],Invisible:1b}
+summon minecraft:armor_stand 0 70 0 {Marker:1b,Tags:["bdf_hotspot"],Invisible:1b}
+summon minecraft:armor_stand 0 70 0 {Marker:1b,Tags:["bdf_hotspot"],Invisible:1b}
+summon minecraft:armor_stand 0 70 0 {Marker:1b,Tags:["bdf_hotspot"],Invisible:1b}
+summon minecraft:armor_stand 0 70 0 {Marker:1b,Tags:["bdf_hotspot"],Invisible:1b}
+summon minecraft:armor_stand 0 70 0 {Marker:1b,Tags:["bdf_hotspot"],Invisible:1b}
+summon minecraft:armor_stand 0 70 0 {Marker:1b,Tags:["bdf_hotspot"],Invisible:1b}
 
-spreadplayers 0 0 45 50 under 70 false @e[tag=bdf_hotspot]
+spreadplayers 0 0 45 60 under 70 false @e[tag=bdf_hotspot]
 
 # Spawn champions
 execute as @e[tag=bdf_hotspot] at @s run function bdf:helpers/assign_hotspot
@@ -51,6 +51,10 @@ execute as @e[tag=bdf_hotspot] at @s run function bdf:helpers/assign_hotspot
 # Spawn adds
 execute if score enemy_type bdf_state matches 0 as @e[tag=bdf_hotspot] at @s run function bdf:helpers/spawn/undead/small
 execute if score enemy_type bdf_state matches 0 positioned 0 100 0 in minecraft:the_end run function bdf:helpers/spawn/undead/large
+execute if score enemy_type bdf_state matches 1 as @e[tag=bdf_hotspot] at @s run function bdf:helpers/spawn/nether/small
+execute if score enemy_type bdf_state matches 1 positioned 0 100 0 in minecraft:the_end run function bdf:helpers/spawn/nether/large
+execute if score enemy_type bdf_state matches 2 as @e[tag=bdf_hotspot] at @s run function bdf:helpers/spawn/illagers/small
+execute if score enemy_type bdf_state matches 2 positioned 0 100 0 in minecraft:the_end run function bdf:helpers/spawn/illagers/large
 
 # Scoreboards
 scoreboard players set #objective_1 bdf_minions 0

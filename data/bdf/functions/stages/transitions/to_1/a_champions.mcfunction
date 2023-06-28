@@ -36,22 +36,27 @@ bossbar set bdf:target_6 color purple
 scoreboard players reset * bdf_minions
 scoreboard players set #next_champion bdf_minions 1
 
-summon minecraft:armor_stand 0 100 0 {Marker:1b,Tags:["bdf_spawn_helper"]}
-summon minecraft:armor_stand 0 100 0 {Marker:1b,Tags:["bdf_spawn_helper"]}
-summon minecraft:armor_stand 0 100 0 {Marker:1b,Tags:["bdf_spawn_helper"]}
-summon minecraft:armor_stand 0 100 0 {Marker:1b,Tags:["bdf_spawn_helper"]}
-summon minecraft:armor_stand 0 100 0 {Marker:1b,Tags:["bdf_spawn_helper"]}
-summon minecraft:armor_stand 0 100 0 {Marker:1b,Tags:["bdf_spawn_helper"]}
+summon minecraft:armor_stand 0 70 0 {Marker:1b,Tags:["bdf_spawn_helper"]}
+summon minecraft:armor_stand 0 70 0 {Marker:1b,Tags:["bdf_spawn_helper"]}
+summon minecraft:armor_stand 0 70 0 {Marker:1b,Tags:["bdf_spawn_helper"]}
+summon minecraft:armor_stand 0 70 0 {Marker:1b,Tags:["bdf_spawn_helper"]}
+summon minecraft:armor_stand 0 70 0 {Marker:1b,Tags:["bdf_spawn_helper"]}
+summon minecraft:armor_stand 0 70 0 {Marker:1b,Tags:["bdf_spawn_helper"]}
 
-spreadplayers 0 0 45 50 under 70 false @e[tag=bdf_spawn_helper]
+spreadplayers 0 0 45 60 under 70 false @e[tag=bdf_spawn_helper]
 
 # Spawn champions
 execute if score enemy_type bdf_state matches 0 as @e[tag=bdf_spawn_helper] at @s run function bdf:helpers/spawn/undead/champion
+execute if score enemy_type bdf_state matches 1 as @e[tag=bdf_spawn_helper] at @s run function bdf:helpers/spawn/nether/champion
+execute if score enemy_type bdf_state matches 2 as @e[tag=bdf_spawn_helper] at @s run function bdf:helpers/spawn/illagers/champion
 
 # Spawn adds
 execute if score enemy_type bdf_state matches 0 as @e[tag=bdf_spawn_helper] at @s run function bdf:helpers/spawn/undead/small
-execute if score enemy_type bdf_state matches 0 as @e[tag=bdf_spawn_helper] at @s run function bdf:helpers/spawn/undead/small
 execute if score enemy_type bdf_state matches 0 positioned 0 100 0 in minecraft:the_end run function bdf:helpers/spawn/undead/large
+execute if score enemy_type bdf_state matches 1 as @e[tag=bdf_spawn_helper] at @s run function bdf:helpers/spawn/nether/small
+execute if score enemy_type bdf_state matches 1 positioned 0 100 0 in minecraft:the_end run function bdf:helpers/spawn/nether/large
+execute if score enemy_type bdf_state matches 2 as @e[tag=bdf_spawn_helper] at @s run function bdf:helpers/spawn/illagers/small
+execute if score enemy_type bdf_state matches 2 positioned 0 100 0 in minecraft:the_end run function bdf:helpers/spawn/illagers/large
 
 kill @e[tag=bdf_spawn_helper]
 
