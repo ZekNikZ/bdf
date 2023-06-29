@@ -1,4 +1,12 @@
 # Clear schedules
+schedule clear bdf:stages/transitions/to_0
+schedule clear bdf:stages/transitions/to_1
+schedule clear bdf:stages/transitions/to_2
+schedule clear bdf:stages/transitions/to_3
+schedule clear bdf:stages/events/fireball
+schedule clear bdf:stages/events/lightning
+schedule clear bdf:stages/events/spawn_more_mobs
+schedule clear bdf:stages/events/player_swap
 
 # Kill markers
 kill @e[tag=bdf_minion]
@@ -35,7 +43,8 @@ scoreboard objectives remove bdf_minions
 team remove bdf_dragon
 team remove bdf_champion
 
-# Grant advancement
+# Grant advancement & loot
 advancement grant @a[predicate=bdf:in_the_end] only minecraft:end/kill_dragon
+execute as @a[predicate=bdf:in_the_end] run function bdf:helpers/give_loot
 
 tellraw ZekNikZ ["",{"text":"[Better Dragon Fight] ","color":"light_purple"},"Dragon fight cleaned up."]

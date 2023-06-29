@@ -1,0 +1,280 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:dragon_egg"
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "weight": 1,
+                    "type": "minecraft:item",
+                    "name": "minecraft:enchanted_book",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_name",
+                            "name": "§dEnchanted Book (Enderial)"
+                        },
+                        {
+                            "function": "minecraft:set_enchantments",
+                            "enchantments": {
+                                "minecraft:sharpness": 6
+                            }
+                        }
+                    ]
+                },
+                {
+                    "weight": 1,
+                    "type": "minecraft:item",
+                    "name": "minecraft:enchanted_book",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_name",
+                            "name": "§dEnchanted Book (Enderial)"
+                        },
+                        {
+                            "function": "minecraft:set_enchantments",
+                            "enchantments": {
+                                "minecraft:protection": 5
+                            }
+                        }
+                    ]
+                },
+                {
+                    "weight": 1,
+                    "type": "minecraft:item",
+                    "name": "minecraft:enchanted_book",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_name",
+                            "name": "§dEnchanted Book (Enderial)"
+                        },
+                        {
+                            "function": "minecraft:set_enchantments",
+                            "enchantments": {
+                                "minecraft:efficiency": 6
+                            }
+                        }
+                    ]
+                },
+                {
+                    "weight": 1,
+                    "type": "minecraft:item",
+                    "name": "minecraft:enchanted_book",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_name",
+                            "name": "§dEnchanted Book (Enderial)"
+                        },
+                        {
+                            "function": "minecraft:set_enchantments",
+                            "enchantments": {
+                                "minecraft:looting": 4
+                            }
+                        }
+                    ]
+                },
+                {
+                    "weight": 1,
+                    "type": "minecraft:item",
+                    "name": "minecraft:enchanted_book",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_name",
+                            "name": "§dEnchanted Book (Enderial)"
+                        },
+                        {
+                            "function": "minecraft:set_enchantments",
+                            "enchantments": {
+                                "minecraft:sweeping": 4
+                            }
+                        }
+                    ]
+                },
+                {
+                    "weight": 1,
+                    "type": "minecraft:item",
+                    "name": "minecraft:enchanted_book",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_name",
+                            "name": "§dEnchanted Book (Enderial)"
+                        },
+                        {
+                            "function": "minecraft:set_enchantments",
+                            "enchantments": {
+                                "minecraft:power": 6
+                            }
+                        }
+                    ]
+                },
+                {
+                    "weight": 1,
+                    "type": "minecraft:item",
+                    "name": "minecraft:enchanted_book",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_name",
+                            "name": "§dEnchanted Book (Enderial)"
+                        },
+                        {
+                            "function": "minecraft:set_enchantments",
+                            "enchantments": {
+                                "minecraft:fortune": 4
+                            }
+                        }
+                    ]
+                },
+                {
+                    "weight": 1,
+                    "type": "minecraft:item",
+                    "name": "minecraft:enchanted_book",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_name",
+                            "name": "§dEnchanted Book (Enderial)"
+                        },
+                        {
+                            "function": "minecraft:set_enchantments",
+                            "enchantments": {
+                                "minecraft:swift_sneak": 3
+                            }
+                        }
+                    ]
+                },
+                {
+                    "weight": 1,
+                    "type": "minecraft:item",
+                    "name": "minecraft:enchanted_book",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_name",
+                            "name": "§dEnchanted Book (Enderial)"
+                        },
+                        {
+                            "function": "minecraft:set_enchantments",
+                            "enchantments": {
+                                "minecraft:soul_speed": 3
+                            }
+                        }
+                    ]
+                },
+                {
+                    "weight": 1,
+                    "type": "minecraft:item",
+                    "name": "minecraft:enchanted_book",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_name",
+                            "name": "§dEnchanted Book (Enderial)"
+                        },
+                        {
+                            "function": "minecraft:set_enchantments",
+                            "enchantments": {
+                                "minecraft:piercing": 4
+                            }
+                        }
+                    ]
+                },
+                {
+                    "weight": 1,
+                    "type": "minecraft:item",
+                    "name": "minecraft:enchanted_book",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_name",
+                            "name": "§dEnchanted Book (Enderial)"
+                        },
+                        {
+                            "function": "minecraft:set_enchantments",
+                            "enchantments": {
+                                "minecraft:quick_charge": 4
+                            }
+                        }
+                    ]
+                },
+                {
+                    "weight": 2,
+                    "type": "minecraft:item",
+                    "name": "minecraft:potion",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_name",
+                            "name": "§dPotion of Agility (Enderial)"
+                        },
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{CustomPotionEffects:[{Id:1,Amplifier:2,Duration:19200},{Id:8,Amplifier:2,Duration:19200}]}"
+                        }
+                    ]
+                },
+                {
+                    "weight": 2,
+                    "type": "minecraft:item",
+                    "name": "minecraft:potion",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_name",
+                            "name": "§dPotion of Mending (Enderial)"
+                        },
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{CustomPotionEffects:[{Id:6,Amplifier:4,Duration:20},{Id:10,Amplifier:0,Duration:14400},{Id:23,Amplifier:5,Duration:20}]}"
+                        }
+                    ]
+                },
+                {
+                    "weight": 2,
+                    "type": "minecraft:item",
+                    "name": "minecraft:potion",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_name",
+                            "name": "§dPotion of Aggression (Enderial)"
+                        },
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{CustomPotionEffects:[{Id:5,Amplifier:1,Duration:14400},{Id:11,Amplifier:1,Duration:14400}]}"
+                        }
+                    ]
+                },
+                {
+                    "weight": 2,
+                    "type": "minecraft:item",
+                    "name": "minecraft:potion",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_name",
+                            "name": "§dPotion of Growth (Enderial)"
+                        },
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{CustomPotionEffects:[{Id:21,Amplifier:4,Duration:14400},{Id:22,Amplifier:4,Duration:14400}]}"
+                        }
+                    ]
+                },
+                {
+                    "weight": 2,
+                    "type": "minecraft:item",
+                    "name": "minecraft:potion",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_name",
+                            "name": "§dPotion of Mining (Enderial)"
+                        },
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{CustomPotionEffects:[{Id:3,Amplifier:1,Duration:14400},{Id:16,Amplifier:0,Duration:14400},{Id:13,Amplifier:0,Duration:14400}]}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -16,6 +16,7 @@ function bdf:stages/transitions/helpers/select_next_attack
 scoreboard players operation last_attack_type bdf_state = mechanic_type bdf_state
 
 # Schedule events
+execute if score mechanic_type bdf_state matches 0 as @a[predicate=bdf:in_the_end] at @s run playsound minecraft:entity.witch.celebrate voice @a ~ ~ ~ 1 0.7
 execute if score mechanic_type bdf_state matches 0 run tellraw @a[predicate=bdf:in_the_end] {"text":"Roar! You'll have to be quick on your feet to dodge my fireballs!","color": "light_purple","italic": true}
 execute if score mechanic_type bdf_state matches 0 run schedule function bdf:stages/events/fireball 10s
 execute if score mechanic_type bdf_state matches 1 run schedule function bdf:stages/events/lightning 5s
@@ -32,3 +33,6 @@ function bdf:helpers/respawn_random_crystal
 schedule function bdf:stages/transitions/to_3 60s
 
 schedule function bdf:stages/transitions/to_1 100s
+
+scoreboard players operation min_dragon_health bdf_state = dragon_health bdf_state
+scoreboard players operation min_dragon_health bdf_state -= #256 bdf_constants

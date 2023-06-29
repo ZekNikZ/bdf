@@ -1,6 +1,11 @@
 scoreboard players set fight_state bdf_state 1
 
 schedule clear bdf:stages/transitions/to_1
+schedule clear bdf:stages/transitions/to_3
+schedule clear bdf:stages/events/fireball
+schedule clear bdf:stages/events/lightning
+schedule clear bdf:stages/events/spawn_more_mobs
+schedule clear bdf:stages/events/player_swap
 
 function bdf:helpers/enable_shield
 

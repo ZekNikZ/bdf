@@ -72,12 +72,12 @@ execute as @e[tag=bdf_hotspot,scores={bdf_minions=5}] at @s unless entity @e[tag
 execute as @e[tag=bdf_hotspot,scores={bdf_minions=6}] at @s unless entity @e[tag=bdf_minion,distance=..10] unless entity @p[distance=..5] run bossbar set bdf:target_6 color yellow
 
 # Compute progress
-execute as @e[tag=bdf_hotspot,scores={bdf_minions=1}] at @s unless entity @e[tag=bdf_minion,distance=..10] as @a[distance=..5] run scoreboard players add #objective_1 bdf_minions 400
-execute as @e[tag=bdf_hotspot,scores={bdf_minions=2}] at @s unless entity @e[tag=bdf_minion,distance=..10] as @a[distance=..5] run scoreboard players add #objective_2 bdf_minions 400
-execute as @e[tag=bdf_hotspot,scores={bdf_minions=3}] at @s unless entity @e[tag=bdf_minion,distance=..10] as @a[distance=..5] run scoreboard players add #objective_3 bdf_minions 400
-execute as @e[tag=bdf_hotspot,scores={bdf_minions=4}] at @s unless entity @e[tag=bdf_minion,distance=..10] as @a[distance=..5] run scoreboard players add #objective_4 bdf_minions 400
-execute as @e[tag=bdf_hotspot,scores={bdf_minions=5}] at @s unless entity @e[tag=bdf_minion,distance=..10] as @a[distance=..5] run scoreboard players add #objective_5 bdf_minions 400
-execute as @e[tag=bdf_hotspot,scores={bdf_minions=6}] at @s unless entity @e[tag=bdf_minion,distance=..10] as @a[distance=..5] run scoreboard players add #objective_6 bdf_minions 400
+execute as @e[tag=bdf_hotspot,scores={bdf_minions=1}] at @s unless entity @e[tag=bdf_minion,distance=..10] as @a[distance=..5] run scoreboard players add #objective_1 bdf_minions 1
+execute as @e[tag=bdf_hotspot,scores={bdf_minions=2}] at @s unless entity @e[tag=bdf_minion,distance=..10] as @a[distance=..5] run scoreboard players add #objective_2 bdf_minions 1
+execute as @e[tag=bdf_hotspot,scores={bdf_minions=3}] at @s unless entity @e[tag=bdf_minion,distance=..10] as @a[distance=..5] run scoreboard players add #objective_3 bdf_minions 1
+execute as @e[tag=bdf_hotspot,scores={bdf_minions=4}] at @s unless entity @e[tag=bdf_minion,distance=..10] as @a[distance=..5] run scoreboard players add #objective_4 bdf_minions 1
+execute as @e[tag=bdf_hotspot,scores={bdf_minions=5}] at @s unless entity @e[tag=bdf_minion,distance=..10] as @a[distance=..5] run scoreboard players add #objective_5 bdf_minions 1
+execute as @e[tag=bdf_hotspot,scores={bdf_minions=6}] at @s unless entity @e[tag=bdf_minion,distance=..10] as @a[distance=..5] run scoreboard players add #objective_6 bdf_minions 1
 
 execute if score #objective_1 bdf_minions matches 600.. as @e[tag=bdf_hotspot,scores={bdf_minions=1}] at @s run function bdf:helpers/spawn_firework
 execute if score #objective_1 bdf_minions matches 600.. as @e[tag=bdf_hotspot,scores={bdf_minions=1}] at @s run function bdf:helpers/play_success_sound
