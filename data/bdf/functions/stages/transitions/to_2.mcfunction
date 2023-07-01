@@ -35,4 +35,4 @@ schedule function bdf:stages/transitions/to_3 60s
 schedule function bdf:stages/transitions/to_1 100s
 
 scoreboard players operation min_dragon_health bdf_state = dragon_health bdf_state
-scoreboard players operation min_dragon_health bdf_state -= #256 bdf_constants
+scoreboard players operation min_dragon_health bdf_state -= #150 bdf_constants
