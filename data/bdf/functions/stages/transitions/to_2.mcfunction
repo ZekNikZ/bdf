@@ -26,8 +26,8 @@ execute if score mechanic_type bdf_state matches 2 in minecraft:the_end position
 execute if score mechanic_type bdf_state matches 2 run schedule function bdf:stages/events/player_swap 5s
 
 # Respawn 3 crystals
-scoreboard players set respawn_crystals bdf_state 3
-function bdf:helpers/respawn_random_crystal
+# scoreboard players set respawn_crystals bdf_state 3
+# function bdf:helpers/respawn_random_crystal
 
 # Automatically go to stage 3 if the crystals aren't destroyed
 schedule function bdf:stages/transitions/to_3 60s

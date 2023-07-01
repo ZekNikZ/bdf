@@ -16,7 +16,7 @@ fill ~-5 ~-5 ~-5 ~5 ~5 ~5 minecraft:air replace minecraft:crying_obsidian
 execute as @e[type=end_crystal,tag=bdf_crystal] at @s run function bdf:setup/add_iron_bars
 
 # Add crying obsidian
-execute as @e[type=end_crystal,tag=bdf_crystal,sort=random,limit=3] at @s run function bdf:setup/add_crying_obsidian
+# execute as @e[type=end_crystal,tag=bdf_crystal,sort=random,limit=3] at @s run function bdf:setup/add_crying_obsidian
 
 # Add crystal markers
 execute as @e[type=end_crystal,tag=bdf_crystal] at @s run summon minecraft:armor_stand ~ ~ ~ {Invisible:1b,Marker:1b,Tags:["bdf_crystal_marker"]}
