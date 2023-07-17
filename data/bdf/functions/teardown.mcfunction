@@ -46,7 +46,7 @@ team remove bdf_champion
 # Grant advancement & loot
 advancement grant @a[predicate=bdf:in_the_end] only minecraft:end/kill_dragon
 execute as @a[predicate=bdf:in_the_end] run function bdf:helpers/give_loot
-execute as @a[predicate=bdf:in_the_end] unless score @s bdf_has_egg matches 1.. run give @s dragon_egg
+execute as @a[predicate=bdf:in_the_end] unless score @s bdf_has_egg matches 1.. run give @s minecraft:dragon_egg
 scoreboard players set @a[predicate=bdf:in_the_end] bdf_has_egg 1
 
 tellraw ZekNikZ ["",{"text":"[Better Dragon Fight] ","color":"light_purple"},"Dragon fight cleaned up."]
