@@ -1,16 +1,7 @@
 {
     "pools": [
         {
-            "rolls": 1,
-            "entries": [
-                {
-                    "type": "minecraft:item",
-                    "name": "minecraft:dragon_egg"
-                }
-            ]
-        },
-        {
-            "rolls": 1,
+            "rolls": 2,
             "entries": [
                 {
                     "weight": 1,
@@ -177,7 +168,7 @@
                         {
                             "function": "minecraft:set_enchantments",
                             "enchantments": {
-                                "minecraft:piercing": 4
+                                "minecraft:piercing": 5
                             }
                         }
                     ]
@@ -195,6 +186,23 @@
                             "function": "minecraft:set_enchantments",
                             "enchantments": {
                                 "minecraft:quick_charge": 4
+                            }
+                        }
+                    ]
+                },
+                {
+                    "weight": 1,
+                    "type": "minecraft:item",
+                    "name": "minecraft:enchanted_book",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_name",
+                            "name": "§dEnchanted Book (Enderial)"
+                        },
+                        {
+                            "function": "minecraft:set_enchantments",
+                            "enchantments": {
+                                "minecraft:unbreaking": 4
                             }
                         }
                     ]

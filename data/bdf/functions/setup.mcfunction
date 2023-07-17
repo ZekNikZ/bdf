@@ -62,6 +62,9 @@ scoreboard objectives add bdf_state dummy
 scoreboard players set fight_state bdf_state 0
 scoreboard players set shield bdf_state 0
 
+# Loot
+scoreboard objectives add bdf_has_egg dummy
+
 # Misc
 function bdf:randomizer/setup
 scoreboard objectives add bdf_minions dummy
