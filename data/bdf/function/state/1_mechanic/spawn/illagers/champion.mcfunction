@@ -1,0 +1,7 @@
+execute if score #next_champion bdf_minions matches 1..3 run summon minecraft:vindicator ~ ~ ~ {Tags:["bdf_champion","bdf_minion","bdf_cleanup","bdf_objective"],PersistenceRequired:1b,Health:80,Glowing:1b,attributes:[{id:"minecraft:generic.max_health",base:80}],HandItems:[{count:1,id:"minecraft:iron_axe"},{}],CustomName:'"Dragon\'s Champion"',DeathLootTable:"bdf:custom/nothing"}
+execute if score #next_champion bdf_minions matches 4.. run summon minecraft:ravager ~ ~ ~ {Tags:["bdf_champion","bdf_minion","bdf_cleanup","bdf_objective"],PersistenceRequired:1b,Health:80,Glowing:1b,attributes:[{id:"minecraft:generic.max_health",base:80}],Passengers:[{id:"minecraft:evoker",PersistenceRequired:1b,Tags:["bdf_minion","bdf_cleanup"],CustomName:'"Dragonspawn"',DeathLootTable:"bdf:custom/nothing"}],CustomName:'"Dragon\'s Champion"',DeathLootTable:"bdf:custom/nothing"}
+summon minecraft:marker ~ ~ ~ {Tags:["bdf_champion_marker","bdf_cleanup"]}
+scoreboard players operation @n[tag=bdf_champion] bdf_minions = #next_champion bdf_minions
+scoreboard players operation @n[tag=bdf_champion_marker] bdf_minions = #next_champion bdf_minions
+team join bdf_champion @n[tag=bdf_champion]
+scoreboard players add #next_champion bdf_minions 1
