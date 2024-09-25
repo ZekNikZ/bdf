@@ -19,6 +19,11 @@ execute if score Level bdf_state matches 4 store result score LootAmount bdf_mat
 execute if score Level bdf_state matches 5 store result score LootAmount bdf_math run random value 100..199 bdf:loot
 scoreboard players operation LootAmount bdf_math /= #50 bdf_math
 scoreboard players operation @p[predicate=bdf:in_the_end] bdf_loot = LootAmount bdf_math
+
+scoreboard players add @a[predicate=bdf:in_the_end] bdf_free_loot 0
+execute as @a[scores={bdf_free_loot=0}] at @s run scoreboard players add @s bdf_loot 1
+execute as @a[scores={bdf_free_loot=0}] at @s run scoreboard players set @s bdf_free_loot 1
+
 execute as @a[predicate=bdf:in_the_end] at @s run function bdf:helpers/grant_loot
 
 # Create dragon egg
@@ -33,6 +38,7 @@ kill @e[tag=bdf_cleanup]
 scoreboard objectives remove bdf_math
 scoreboard objectives remove bdf_minions
 scoreboard objectives remove bdf_loot
+scoreboard objectives remove bdf_attacks
 
 # Gamerules
 gamerule universalAnger false

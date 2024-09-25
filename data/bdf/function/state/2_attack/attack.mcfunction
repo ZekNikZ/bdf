@@ -7,5 +7,5 @@ scoreboard players operation Attack bdf_state = @e[tag=bdf_attack_selected,limit
 kill @e[tag=bdf_attack_selected]
 
 # Schedule attack
-execute store result storage bdf:scheduler delay int 1 run random value 8..15 bdf:scheduler
+execute store result storage bdf:scheduler delay int 1 run random value 15..20 bdf:scheduler
 function bdf:state/2_attack/schedule_attack with storage bdf:scheduler

@@ -4,6 +4,7 @@ tellraw @p[team=bdf] ["",{"text":"[Better Dragon Fight] ","color":"light_purple"
 scoreboard objectives add bdf_math dummy
 scoreboard objectives add bdf_minions dummy
 scoreboard objectives add bdf_loot dummy
+scoreboard objectives add bdf_attacks dummy
 
 # Create teams
 team add bdf_dragon
