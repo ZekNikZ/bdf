@@ -3,7 +3,7 @@ execute if entity @e[type=minecraft:ender_dragon] if entity @e[type=minecraft:en
 
 # Teardown
 execute as @e[type=minecraft:ender_dragon,nbt={DragonPhase:9},tag=!bdf_teardown] run function bdf:teardown
-execute if score Active bdf_state matches 1 unless entity @e[type=minecraft:ender_dragon] run function bdf:teardown
+execute in minecraft:the_end if score Active bdf_state matches 1 unless entity @e[type=minecraft:ender_dragon] run function bdf:teardown
 
 # Shield
 execute if score Shield bdf_state matches 1 run function bdf:tick/tick_shield
