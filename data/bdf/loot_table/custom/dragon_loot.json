@@ -1,7 +1,7 @@
 {
     "pools": [
         {
-            "rolls": 2,
+            "rolls": 1,
             "entries": [
                 {
                     "weight": 1,
@@ -9,8 +9,11 @@
                     "name": "minecraft:enchanted_book",
                     "functions": [
                         {
-                            "function": "minecraft:set_name",
-                            "name": "§dEnchanted Book (Enderial)"
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "item_name": "{\"text\":\"Enchanted Book (Enderial)\",\"color\":\"gold\"}",
+                                "minecraft:rarity": "epic"
+                            }
                         },
                         {
                             "function": "minecraft:set_enchantments",
@@ -26,8 +29,11 @@
                     "name": "minecraft:enchanted_book",
                     "functions": [
                         {
-                            "function": "minecraft:set_name",
-                            "name": "§dEnchanted Book (Enderial)"
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "item_name": "{\"text\":\"Enchanted Book (Enderial)\",\"color\":\"gold\"}",
+                                "minecraft:rarity": "epic"
+                            }
                         },
                         {
                             "function": "minecraft:set_enchantments",
@@ -43,8 +49,11 @@
                     "name": "minecraft:enchanted_book",
                     "functions": [
                         {
-                            "function": "minecraft:set_name",
-                            "name": "§dEnchanted Book (Enderial)"
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "item_name": "{\"text\":\"Enchanted Book (Enderial)\",\"color\":\"gold\"}",
+                                "minecraft:rarity": "epic"
+                            }
                         },
                         {
                             "function": "minecraft:set_enchantments",
@@ -60,8 +69,11 @@
                     "name": "minecraft:enchanted_book",
                     "functions": [
                         {
-                            "function": "minecraft:set_name",
-                            "name": "§dEnchanted Book (Enderial)"
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "item_name": "{\"text\":\"Enchanted Book (Enderial)\",\"color\":\"gold\"}",
+                                "minecraft:rarity": "epic"
+                            }
                         },
                         {
                             "function": "minecraft:set_enchantments",
@@ -77,13 +89,16 @@
                     "name": "minecraft:enchanted_book",
                     "functions": [
                         {
-                            "function": "minecraft:set_name",
-                            "name": "§dEnchanted Book (Enderial)"
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "item_name": "{\"text\":\"Enchanted Book (Enderial)\",\"color\":\"gold\"}",
+                                "minecraft:rarity": "epic"
+                            }
                         },
                         {
                             "function": "minecraft:set_enchantments",
                             "enchantments": {
-                                "minecraft:sweeping": 4
+                                "minecraft:sweeping_edge": 4
                             }
                         }
                     ]
@@ -94,8 +109,11 @@
                     "name": "minecraft:enchanted_book",
                     "functions": [
                         {
-                            "function": "minecraft:set_name",
-                            "name": "§dEnchanted Book (Enderial)"
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "item_name": "{\"text\":\"Enchanted Book (Enderial)\",\"color\":\"gold\"}",
+                                "minecraft:rarity": "epic"
+                            }
                         },
                         {
                             "function": "minecraft:set_enchantments",
@@ -111,8 +129,11 @@
                     "name": "minecraft:enchanted_book",
                     "functions": [
                         {
-                            "function": "minecraft:set_name",
-                            "name": "§dEnchanted Book (Enderial)"
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "item_name": "{\"text\":\"Enchanted Book (Enderial)\",\"color\":\"gold\"}",
+                                "minecraft:rarity": "epic"
+                            }
                         },
                         {
                             "function": "minecraft:set_enchantments",
@@ -128,29 +149,16 @@
                     "name": "minecraft:enchanted_book",
                     "functions": [
                         {
-                            "function": "minecraft:set_name",
-                            "name": "§dEnchanted Book (Enderial)"
-                        },
-                        {
-                            "function": "minecraft:set_enchantments",
-                            "enchantments": {
-                                "minecraft:swift_sneak": 3
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "item_name": "{\"text\":\"Enchanted Book (Enderial)\",\"color\":\"gold\"}",
+                                "minecraft:rarity": "epic"
                             }
-                        }
-                    ]
-                },
-                {
-                    "weight": 1,
-                    "type": "minecraft:item",
-                    "name": "minecraft:enchanted_book",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_name",
-                            "name": "§dEnchanted Book (Enderial)"
                         },
                         {
                             "function": "minecraft:set_enchantments",
                             "enchantments": {
+                                "minecraft:swift_sneak": 3,
                                 "minecraft:soul_speed": 3
                             }
                         }
@@ -162,8 +170,11 @@
                     "name": "minecraft:enchanted_book",
                     "functions": [
                         {
-                            "function": "minecraft:set_name",
-                            "name": "§dEnchanted Book (Enderial)"
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "item_name": "{\"text\":\"Enchanted Book (Enderial)\",\"color\":\"gold\"}",
+                                "minecraft:rarity": "epic"
+                            }
                         },
                         {
                             "function": "minecraft:set_enchantments",
@@ -179,8 +190,11 @@
                     "name": "minecraft:enchanted_book",
                     "functions": [
                         {
-                            "function": "minecraft:set_name",
-                            "name": "§dEnchanted Book (Enderial)"
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "item_name": "{\"text\":\"Enchanted Book (Enderial)\",\"color\":\"gold\"}",
+                                "minecraft:rarity": "epic"
+                            }
                         },
                         {
                             "function": "minecraft:set_enchantments",
@@ -189,96 +203,321 @@
                             }
                         }
                     ]
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "weight": 1,
+                    "type": "minecraft:item",
+                    "name": "minecraft:diamond_helmet",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "item_name": "{\"text\":\"Helm of Far Reach (Enderial)\",\"color\":\"gold\"}",
+                                "minecraft:rarity": "epic"
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_attributes",
+                            "modifiers": [
+                                {
+                                    "attribute": "player.block_interaction_range",
+                                    "id": "bdf:block_reach",
+                                    "slot": "armor",
+                                    "operation": "add_value",
+                                    "amount": 2
+                                }
+                            ]
+                        }
+                    ]
                 },
                 {
                     "weight": 1,
                     "type": "minecraft:item",
-                    "name": "minecraft:enchanted_book",
+                    "name": "minecraft:diamond_helmet",
                     "functions": [
                         {
-                            "function": "minecraft:set_name",
-                            "name": "§dEnchanted Book (Enderial)"
-                        },
-                        {
-                            "function": "minecraft:set_enchantments",
-                            "enchantments": {
-                                "minecraft:unbreaking": 4
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "item_name": "{\"text\":\"Helm of Infinite Breath (Enderial)\",\"color\":\"gold\"}",
+                                "minecraft:rarity": "epic"
                             }
+                        },
+                        {
+                            "function": "minecraft:set_attributes",
+                            "modifiers": [
+                                {
+                                    "attribute": "generic.oxygen_bonus",
+                                    "id": "bdf:breathing",
+                                    "slot": "armor",
+                                    "operation": "add_value",
+                                    "amount": 1024
+                                }
+                            ]
                         }
                     ]
                 },
                 {
-                    "weight": 2,
+                    "weight": 1,
                     "type": "minecraft:item",
-                    "name": "minecraft:potion",
+                    "name": "minecraft:diamond_helmet",
                     "functions": [
                         {
-                            "function": "minecraft:set_name",
-                            "name": "§dPotion of Agility (Enderial)"
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "item_name": "{\"text\":\"Helm of Vitality (Enderial)\",\"color\":\"gold\"}",
+                                "minecraft:rarity": "epic"
+                            }
                         },
                         {
-                            "function": "minecraft:set_nbt",
-                            "tag": "{CustomPotionEffects:[{Id:1,Amplifier:2,Duration:19200},{Id:8,Amplifier:2,Duration:19200}]}"
+                            "function": "minecraft:set_attributes",
+                            "modifiers": [
+                                {
+                                    "attribute": "generic.max_health",
+                                    "id": "bdf:health_helmet",
+                                    "slot": "armor",
+                                    "operation": "add_multiplied_base",
+                                    "amount": 0.5
+                                }
+                            ]
                         }
                     ]
                 },
                 {
-                    "weight": 2,
+                    "weight": 1,
                     "type": "minecraft:item",
-                    "name": "minecraft:potion",
+                    "name": "minecraft:diamond_chestplate",
                     "functions": [
                         {
-                            "function": "minecraft:set_name",
-                            "name": "§dPotion of Mending (Enderial)"
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "item_name": "{\"text\":\"Cuirass of Strength (Enderial)\",\"color\":\"gold\"}",
+                                "minecraft:rarity": "epic"
+                            }
                         },
                         {
-                            "function": "minecraft:set_nbt",
-                            "tag": "{CustomPotionEffects:[{Id:6,Amplifier:4,Duration:20},{Id:10,Amplifier:0,Duration:14400},{Id:23,Amplifier:5,Duration:20}]}"
+                            "function": "minecraft:set_attributes",
+                            "modifiers": [
+                                {
+                                    "attribute": "generic.attack_damage",
+                                    "id": "bdf:strength",
+                                    "slot": "armor",
+                                    "operation": "add_value",
+                                    "amount": 2
+                                }
+                            ]
                         }
                     ]
                 },
                 {
-                    "weight": 2,
+                    "weight": 1,
                     "type": "minecraft:item",
-                    "name": "minecraft:potion",
+                    "name": "minecraft:diamond_chestplate",
                     "functions": [
                         {
-                            "function": "minecraft:set_name",
-                            "name": "§dPotion of Aggression (Enderial)"
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "item_name": "{\"text\":\"Cuirass of Infernal Resistance (Enderial)\",\"color\":\"gold\"}",
+                                "minecraft:rarity": "epic"
+                            }
                         },
                         {
-                            "function": "minecraft:set_nbt",
-                            "tag": "{CustomPotionEffects:[{Id:5,Amplifier:1,Duration:14400},{Id:11,Amplifier:1,Duration:14400}]}"
+                            "function": "minecraft:set_attributes",
+                            "modifiers": [
+                                {
+                                    "attribute": "generic.burning_time",
+                                    "id": "bdf:no_burn",
+                                    "slot": "armor",
+                                    "operation": "add_value",
+                                    "amount": -1
+                                }
+                            ]
                         }
                     ]
                 },
                 {
-                    "weight": 2,
+                    "weight": 1,
                     "type": "minecraft:item",
-                    "name": "minecraft:potion",
+                    "name": "minecraft:diamond_chestplate",
                     "functions": [
                         {
-                            "function": "minecraft:set_name",
-                            "name": "§dPotion of Growth (Enderial)"
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "item_name": "{\"text\":\"Cuirass of Vitality (Enderial)\",\"color\":\"gold\"}",
+                                "minecraft:rarity": "epic"
+                            }
                         },
                         {
-                            "function": "minecraft:set_nbt",
-                            "tag": "{CustomPotionEffects:[{Id:21,Amplifier:4,Duration:14400},{Id:22,Amplifier:4,Duration:14400}]}"
+                            "function": "minecraft:set_attributes",
+                            "modifiers": [
+                                {
+                                    "attribute": "generic.max_health",
+                                    "id": "bdf:health_chestplate",
+                                    "slot": "armor",
+                                    "operation": "add_multiplied_base",
+                                    "amount": 0.5
+                                }
+                            ]
                         }
                     ]
                 },
                 {
-                    "weight": 2,
+                    "weight": 1,
                     "type": "minecraft:item",
-                    "name": "minecraft:potion",
+                    "name": "minecraft:diamond_leggings",
                     "functions": [
                         {
-                            "function": "minecraft:set_name",
-                            "name": "§dPotion of Mining (Enderial)"
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "item_name": "{\"text\":\"Greaves of Bounding (Enderial)\",\"color\":\"gold\"}",
+                                "minecraft:rarity": "epic"
+                            }
                         },
                         {
-                            "function": "minecraft:set_nbt",
-                            "tag": "{CustomPotionEffects:[{Id:3,Amplifier:1,Duration:14400},{Id:16,Amplifier:0,Duration:14400},{Id:13,Amplifier:0,Duration:14400}]}"
+                            "function": "minecraft:set_attributes",
+                            "modifiers": [
+                                {
+                                    "attribute": "generic.jump_strength",
+                                    "id": "bdf:jump",
+                                    "slot": "armor",
+                                    "operation": "add_value",
+                                    "amount": 0.42
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "weight": 1,
+                    "type": "minecraft:item",
+                    "name": "minecraft:diamond_leggings",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "item_name": "{\"text\":\"Greaves of Sprinting (Enderial)\",\"color\":\"gold\"}",
+                                "minecraft:rarity": "epic"
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_attributes",
+                            "modifiers": [
+                                {
+                                    "attribute": "generic.movement_speed",
+                                    "id": "bdf:sprint",
+                                    "slot": "armor",
+                                    "operation": "add_multiplied_base",
+                                    "amount": 0.3
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "weight": 1,
+                    "type": "minecraft:item",
+                    "name": "minecraft:diamond_leggings",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "item_name": "{\"text\":\"Greaves of Vitality (Enderial)\",\"color\":\"gold\"}",
+                                "minecraft:rarity": "epic"
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_attributes",
+                            "modifiers": [
+                                {
+                                    "attribute": "generic.max_health",
+                                    "id": "bdf:health_leggings",
+                                    "slot": "armor",
+                                    "operation": "add_multiplied_base",
+                                    "amount": 0.5
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "weight": 1,
+                    "type": "minecraft:item",
+                    "name": "minecraft:diamond_boots",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "item_name": "{\"text\":\"Striders of Cushioned Steps (Enderial)\",\"color\":\"gold\"}",
+                                "minecraft:rarity": "epic"
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_attributes",
+                            "modifiers": [
+                                {
+                                    "attribute": "generic.fall_damage_multiplier",
+                                    "id": "bdf:fall_damage",
+                                    "slot": "armor",
+                                    "operation": "add_multiplied_base",
+                                    "amount": -1
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "weight": 1,
+                    "type": "minecraft:item",
+                    "name": "minecraft:diamond_boots",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "item_name": "{\"text\":\"Striders of Tall Steps (Enderial)\",\"color\":\"gold\"}",
+                                "minecraft:rarity": "epic"
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_attributes",
+                            "modifiers": [
+                                {
+                                    "attribute": "generic.step_height",
+                                    "id": "bdf:step_height",
+                                    "slot": "armor",
+                                    "operation": "add_multiplied_base",
+                                    "amount": 1
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "weight": 1,
+                    "type": "minecraft:item",
+                    "name": "minecraft:diamond_boots",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "item_name": "{\"text\":\"Striders of Vitality (Enderial)\",\"color\":\"gold\"}",
+                                "minecraft:rarity": "epic"
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_attributes",
+                            "modifiers": [
+                                {
+                                    "attribute": "generic.max_health",
+                                    "id": "bdf:health_boots",
+                                    "slot": "armor",
+                                    "operation": "add_multiplied_base",
+                                    "amount": 0.5
+                                }
+                            ]
                         }
                     ]
                 }

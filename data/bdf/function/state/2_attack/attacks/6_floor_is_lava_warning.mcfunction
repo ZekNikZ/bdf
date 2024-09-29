@@ -1,4 +1,3 @@
-execute if score WarningZaps bdf_attacks matches 1.. as @e[type=minecraft:ender_dragon] at @s run summon minecraft:lightning_bolt ~ ~ ~
 execute if score WarningZaps bdf_attacks matches 1.. run schedule function bdf:state/2_attack/attacks/6_floor_is_lava_zap 2s
 execute if score WarningZaps bdf_attacks matches 1.. as @a[predicate=bdf:in_the_end] at @s run playsound minecraft:block.bell.resonate ambient @s ~ ~ ~ 1 1.5
 execute if score WarningZaps bdf_attacks matches 1.. as @a[predicate=bdf:in_the_end] at @s run title @a[predicate=bdf:in_the_end] actionbar {"text":"The ground beneath you electrifies...","color":"aqua","italic":true}
