@@ -12,8 +12,8 @@ scoreboard players set @e[tag=bdf_attack_assign] bdf_minions 2
 tag @e[tag=bdf_attack_assign] remove bdf_attack_assign
 
 # Rain Fire
-execute if score Level bdf_state matches 1.. in minecraft:the_end run summon minecraft:marker 0 200 0 {Tags:["bdf_attack_option","bdf_cleanup","bdf_attack_assign"]}
-execute if score Level bdf_state matches 1.. in minecraft:the_end run summon minecraft:marker 0 200 0 {Tags:["bdf_attack_option","bdf_cleanup","bdf_attack_assign"]}
+execute in minecraft:the_end run summon minecraft:marker 0 200 0 {Tags:["bdf_attack_option","bdf_cleanup","bdf_attack_assign"]}
+execute in minecraft:the_end run summon minecraft:marker 0 200 0 {Tags:["bdf_attack_option","bdf_cleanup","bdf_attack_assign"]}
 scoreboard players set @e[tag=bdf_attack_assign] bdf_minions 3
 tag @e[tag=bdf_attack_assign] remove bdf_attack_assign
 

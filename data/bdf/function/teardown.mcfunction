@@ -1,5 +1,8 @@
 tellraw @p[team=bdf] ["",{"text":"[Better Dragon Fight] ","color":"light_purple"},"Tearing down dragon fight..."]
 
+# Unload chunks
+execute in minecraft:the_end run forceload remove -200 -200 200 200
+
 # Teardown state
 function bdf:transition/helpers/teardown_current
 

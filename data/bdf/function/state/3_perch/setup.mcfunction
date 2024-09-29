@@ -9,4 +9,4 @@ scoreboard players operation ThirdOfHealth bdf_math = MaxHealth bdf_state
 scoreboard players operation ThirdOfHealth bdf_math /= #3 bdf_math
 scoreboard players operation HealthThreshold bdf_math = Health bdf_state
 scoreboard players operation HealthThreshold bdf_math -= ThirdOfHealth bdf_math
-scoreboard players operation HealthThreshold bdf_state -= HealthThreshold bdf_math
+scoreboard players operation HealthThreshold bdf_state = HealthThreshold bdf_math

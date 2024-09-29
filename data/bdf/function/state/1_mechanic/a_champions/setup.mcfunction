@@ -33,7 +33,6 @@ bossbar set bdf:target_5 color purple
 bossbar set bdf:target_6 color purple
 
 # Setup mobs
-scoreboard players reset * bdf_minions
 scoreboard players set #next_champion bdf_minions 1
 
 summon minecraft:armor_stand 0 70 0 {Marker:1b,Tags:["bdf_spawn_helper","bdf_cleanup"]}
