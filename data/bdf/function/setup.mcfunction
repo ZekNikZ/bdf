@@ -18,7 +18,9 @@ scoreboard players set State bdf_state -1
 scoreboard players set Shield bdf_state 0
 
 # Constants
+scoreboard players set #2 bdf_math 2
 scoreboard players set #3 bdf_math 3
+scoreboard players set #4 bdf_math 4
 scoreboard players set #50 bdf_math 50
 
 # Determine fight level
@@ -45,7 +47,26 @@ scoreboard players operation MaxHealth bdf_state = DragonHealth bdf_math
 execute store result storage bdf:state MaxHealth int 1 run scoreboard players get DragonHealth bdf_math
 function bdf:helpers/change_dragon_max_health with storage bdf:state
 
-# TODO: determine when to respawn crystals
+# Compute when to respawn crystals
+execute if score Level bdf_state matches 0..1 run scoreboard players operation #CrystalRespawn1 bdf_state = MaxHealth bdf_state
+execute if score Level bdf_state matches 0..1 run scoreboard players operation #CrystalRespawn1 bdf_state /= #2 bdf_math
+execute if score Level bdf_state matches 0..1 run scoreboard players set #CrystalRespawn2 bdf_state -1
+execute if score Level bdf_state matches 0..1 run scoreboard players set #CrystalRespawn3 bdf_state -1
+
+execute if score Level bdf_state matches 2..3 run scoreboard players operation #CrystalRespawn1 bdf_state = MaxHealth bdf_state
+execute if score Level bdf_state matches 2..3 run scoreboard players operation #CrystalRespawn1 bdf_state *= #2 bdf_math
+execute if score Level bdf_state matches 2..3 run scoreboard players operation #CrystalRespawn1 bdf_state /= #3 bdf_math
+execute if score Level bdf_state matches 2..3 run scoreboard players operation #CrystalRespawn2 bdf_state = MaxHealth bdf_state
+execute if score Level bdf_state matches 2..3 run scoreboard players operation #CrystalRespawn2 bdf_state /= #3 bdf_math
+execute if score Level bdf_state matches 2..3 run scoreboard players set #CrystalRespawn3 bdf_state -1
+
+execute if score Level bdf_state matches 4..5 run scoreboard players operation #CrystalRespawn1 bdf_state = MaxHealth bdf_state
+execute if score Level bdf_state matches 4..5 run scoreboard players operation #CrystalRespawn1 bdf_state *= #3 bdf_math
+execute if score Level bdf_state matches 4..5 run scoreboard players operation #CrystalRespawn1 bdf_state /= #4 bdf_math
+execute if score Level bdf_state matches 4..5 run scoreboard players operation #CrystalRespawn2 bdf_state = MaxHealth bdf_state
+execute if score Level bdf_state matches 4..5 run scoreboard players operation #CrystalRespawn2 bdf_state /= #2 bdf_math
+execute if score Level bdf_state matches 4..5 run scoreboard players operation #CrystalRespawn3 bdf_state = MaxHealth bdf_state
+execute if score Level bdf_state matches 4..5 run scoreboard players operation #CrystalRespawn3 bdf_state /= #4 bdf_math
 
 # Bossbars
 bossbar add bdf:shield "Shield"

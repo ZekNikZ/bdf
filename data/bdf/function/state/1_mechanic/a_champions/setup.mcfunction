@@ -69,3 +69,6 @@ execute if score Enemy bdf_state matches 2 positioned 0 100 0 in minecraft:the_e
 kill @e[tag=bdf_spawn_helper]
 
 tellraw @a[predicate=bdf:in_the_end] {"text":"The dragon put up a shield! Defeat the shield protectors to break it!","color":"gold","italic":true}
+
+# Disable coordinates HUD
+scoreboard players set @a[predicate=bdf:in_the_end] ch_toggleCons -1

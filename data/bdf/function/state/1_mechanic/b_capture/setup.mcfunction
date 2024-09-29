@@ -57,12 +57,12 @@ bossbar set bdf:shield players
 execute as @e[tag=bdf_hotspot] at @s run function bdf:state/1_mechanic/b_capture/assign_hotspot
 
 # Spawn mobs
-execute if score enemy_type bdf_state matches 0 as @e[tag=bdf_hotspot] at @s run function bdf:state/1_mechanic/spawn/undead/small
-execute if score enemy_type bdf_state matches 0 positioned 0 100 0 in minecraft:the_end run function bdf:state/1_mechanic/spawn/undead/large
-execute if score enemy_type bdf_state matches 1 as @e[tag=bdf_hotspot] at @s run function bdf:state/1_mechanic/spawn/nether/small
-execute if score enemy_type bdf_state matches 1 positioned 0 100 0 in minecraft:the_end run function bdf:state/1_mechanic/spawn/nether/large
-execute if score enemy_type bdf_state matches 2 as @e[tag=bdf_hotspot] at @s run function bdf:state/1_mechanic/spawn/illagers/small
-execute if score enemy_type bdf_state matches 2 positioned 0 100 0 in minecraft:the_end run function bdf:state/1_mechanic/spawn/illagers/large
+execute if score Enemy bdf_state matches 0 as @e[tag=bdf_hotspot] at @s run function bdf:state/1_mechanic/spawn/undead/small
+execute if score Enemy bdf_state matches 0 positioned 0 100 0 in minecraft:the_end run function bdf:state/1_mechanic/spawn/undead/large
+execute if score Enemy bdf_state matches 1 as @e[tag=bdf_hotspot] at @s run function bdf:state/1_mechanic/spawn/nether/small
+execute if score Enemy bdf_state matches 1 positioned 0 100 0 in minecraft:the_end run function bdf:state/1_mechanic/spawn/nether/large
+execute if score Enemy bdf_state matches 2 as @e[tag=bdf_hotspot] at @s run function bdf:state/1_mechanic/spawn/illagers/small
+execute if score Enemy bdf_state matches 2 positioned 0 100 0 in minecraft:the_end run function bdf:state/1_mechanic/spawn/illagers/large
 
 # Scoreboards
 scoreboard players set #objective_1 bdf_minions 0

@@ -36,12 +36,12 @@ spreadplayers 0 0 50 70 under 70 false @e[tag=bdf_shard_spawner]
 execute as @e[tag=bdf_shard_spawner] at @s positioned ~ ~1 ~ run function bdf:state/1_mechanic/c_collect/spawn_shard
 
 # Spawn mobs
-execute if score enemy_type bdf_state matches 0 as @e[tag=bdf_shard_spawner,sort=random,limit=6] at @s run function bdf:state/1_mechanic/spawn/undead/large
-execute if score enemy_type bdf_state matches 0 positioned 0 100 0 in minecraft:the_end run function bdf:state/1_mechanic/spawn/undead/large
-execute if score enemy_type bdf_state matches 1 as @e[tag=bdf_shard_spawner,sort=random,limit=6] at @s run function bdf:state/1_mechanic/spawn/nether/large
-execute if score enemy_type bdf_state matches 1 positioned 0 100 0 in minecraft:the_end run function bdf:state/1_mechanic/spawn/nether/large
-execute if score enemy_type bdf_state matches 2 as @e[tag=bdf_shard_spawner,sort=random,limit=6] at @s run function bdf:state/1_mechanic/spawn/illagers/large
-execute if score enemy_type bdf_state matches 2 positioned 0 100 0 in minecraft:the_end run function bdf:state/1_mechanic/spawn/illagers/large
+execute if score Enemy bdf_state matches 0 as @e[tag=bdf_shard_spawner,sort=random,limit=6] at @s run function bdf:state/1_mechanic/spawn/undead/large
+execute if score Enemy bdf_state matches 0 positioned 0 100 0 in minecraft:the_end run function bdf:state/1_mechanic/spawn/undead/large
+execute if score Enemy bdf_state matches 1 as @e[tag=bdf_shard_spawner,sort=random,limit=6] at @s run function bdf:state/1_mechanic/spawn/nether/large
+execute if score Enemy bdf_state matches 1 positioned 0 100 0 in minecraft:the_end run function bdf:state/1_mechanic/spawn/nether/large
+execute if score Enemy bdf_state matches 2 as @e[tag=bdf_shard_spawner,sort=random,limit=6] at @s run function bdf:state/1_mechanic/spawn/illagers/large
+execute if score Enemy bdf_state matches 2 positioned 0 100 0 in minecraft:the_end run function bdf:state/1_mechanic/spawn/illagers/large
 
 kill @e[tag=bdf_shard_spawner]
 

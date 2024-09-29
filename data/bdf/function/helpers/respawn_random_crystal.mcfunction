@@ -1,0 +1,1 @@
+execute in minecraft:the_end as @e[tag=bdf_crystal_not_present,sort=random,limit=1] at @s run function bdf:helpers/respawn_crystal
