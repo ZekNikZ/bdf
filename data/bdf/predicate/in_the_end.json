@@ -1,6 +1,35 @@
 {
-    "condition": "location_check",
-    "predicate": {
-        "dimension": "minecraft:the_end"
-    }
+    "condition": "minecraft:all_of",
+    "terms": [
+        {
+            "condition": "location_check",
+            "predicate": {
+                "position": {
+                    "x": {
+                        "min": -500,
+                        "max": 500
+                    },
+                    "y": {
+                        "min": -500,
+                        "max": 500
+                    },
+                    "z": {
+                        "min": -500,
+                        "max": 500
+                    }
+                },
+                "dimension": "minecraft:the_end"
+            }
+        },
+        {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "type_specific": {
+                    "type": "minecraft:player",
+                    "gamemode": ["survival"]
+                }
+            }
+        }
+    ]
 }

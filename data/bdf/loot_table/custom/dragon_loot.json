@@ -230,6 +230,20 @@
                                     "slot": "armor",
                                     "operation": "add_value",
                                     "amount": 2
+                                },
+                                {
+                                    "attribute": "generic.armor",
+                                    "id": "bdf:armor_helmet",
+                                    "slot": "armor",
+                                    "operation": "add_value",
+                                    "amount": 3
+                                },
+                                {
+                                    "attribute": "generic.armor_toughness",
+                                    "id": "bdf:armor_tough_helmet",
+                                    "slot": "armor",
+                                    "operation": "add_value",
+                                    "amount": 2
                                 }
                             ]
                         }
@@ -256,6 +270,20 @@
                                     "slot": "armor",
                                     "operation": "add_value",
                                     "amount": 1024
+                                },
+                                {
+                                    "attribute": "generic.armor",
+                                    "id": "bdf:armor_helmet",
+                                    "slot": "armor",
+                                    "operation": "add_value",
+                                    "amount": 3
+                                },
+                                {
+                                    "attribute": "generic.armor_toughness",
+                                    "id": "bdf:armor_tough_helmet",
+                                    "slot": "armor",
+                                    "operation": "add_value",
+                                    "amount": 2
                                 }
                             ]
                         }
@@ -282,6 +310,20 @@
                                     "slot": "armor",
                                     "operation": "add_multiplied_base",
                                     "amount": 0.5
+                                },
+                                {
+                                    "attribute": "generic.armor",
+                                    "id": "bdf:armor_helmet",
+                                    "slot": "armor",
+                                    "operation": "add_value",
+                                    "amount": 3
+                                },
+                                {
+                                    "attribute": "generic.armor_toughness",
+                                    "id": "bdf:armor_tough_helmet",
+                                    "slot": "armor",
+                                    "operation": "add_value",
+                                    "amount": 2
                                 }
                             ]
                         }
@@ -305,6 +347,20 @@
                                 {
                                     "attribute": "generic.attack_damage",
                                     "id": "bdf:strength",
+                                    "slot": "armor",
+                                    "operation": "add_value",
+                                    "amount": 2
+                                },
+                                {
+                                    "attribute": "generic.armor",
+                                    "id": "bdf:armor_chestplate",
+                                    "slot": "armor",
+                                    "operation": "add_value",
+                                    "amount": 8
+                                },
+                                {
+                                    "attribute": "generic.armor_toughness",
+                                    "id": "bdf:armor_tough_chestplate",
                                     "slot": "armor",
                                     "operation": "add_value",
                                     "amount": 2
@@ -334,6 +390,20 @@
                                     "slot": "armor",
                                     "operation": "add_value",
                                     "amount": -1
+                                },
+                                {
+                                    "attribute": "generic.armor",
+                                    "id": "bdf:armor_chestplate",
+                                    "slot": "armor",
+                                    "operation": "add_value",
+                                    "amount": 8
+                                },
+                                {
+                                    "attribute": "generic.armor_toughness",
+                                    "id": "bdf:armor_tough_chestplate",
+                                    "slot": "armor",
+                                    "operation": "add_value",
+                                    "amount": 2
                                 }
                             ]
                         }
@@ -360,6 +430,20 @@
                                     "slot": "armor",
                                     "operation": "add_multiplied_base",
                                     "amount": 0.5
+                                },
+                                {
+                                    "attribute": "generic.armor",
+                                    "id": "bdf:armor_chestplate",
+                                    "slot": "armor",
+                                    "operation": "add_value",
+                                    "amount": 8
+                                },
+                                {
+                                    "attribute": "generic.armor_toughness",
+                                    "id": "bdf:armor_tough_chestplate",
+                                    "slot": "armor",
+                                    "operation": "add_value",
+                                    "amount": 2
                                 }
                             ]
                         }
@@ -386,6 +470,27 @@
                                     "slot": "armor",
                                     "operation": "add_value",
                                     "amount": 0.42
+                                },
+                                {
+                                    "attribute": "generic.safe_fall_distance",
+                                    "id": "bdf:jump_protection",
+                                    "slot": "armor",
+                                    "operation": "add_value",
+                                    "amount": 3
+                                },
+                                {
+                                    "attribute": "generic.armor",
+                                    "id": "bdf:armor_leggings",
+                                    "slot": "armor",
+                                    "operation": "add_value",
+                                    "amount": 6
+                                },
+                                {
+                                    "attribute": "generic.armor_toughness",
+                                    "id": "bdf:armor_tough_leggings",
+                                    "slot": "armor",
+                                    "operation": "add_value",
+                                    "amount": 2
                                 }
                             ]
                         }
@@ -412,6 +517,20 @@
                                     "slot": "armor",
                                     "operation": "add_multiplied_base",
                                     "amount": 0.3
+                                },
+                                {
+                                    "attribute": "generic.armor",
+                                    "id": "bdf:armor_leggings",
+                                    "slot": "armor",
+                                    "operation": "add_value",
+                                    "amount": 6
+                                },
+                                {
+                                    "attribute": "generic.armor_toughness",
+                                    "id": "bdf:armor_tough_leggings",
+                                    "slot": "armor",
+                                    "operation": "add_value",
+                                    "amount": 2
                                 }
                             ]
                         }
@@ -434,10 +553,24 @@
                             "modifiers": [
                                 {
                                     "attribute": "generic.max_health",
-                                    "id": "bdf:health_leggings",
+                                    "id": "bdf:armor_leggings",
                                     "slot": "armor",
                                     "operation": "add_multiplied_base",
                                     "amount": 0.5
+                                },
+                                {
+                                    "attribute": "generic.armor",
+                                    "id": "bdf:armor_tough_leggings",
+                                    "slot": "armor",
+                                    "operation": "add_value",
+                                    "amount": 6
+                                },
+                                {
+                                    "attribute": "generic.armor_toughness",
+                                    "id": "bdf:armor_helmet",
+                                    "slot": "armor",
+                                    "operation": "add_value",
+                                    "amount": 2
                                 }
                             ]
                         }
@@ -464,6 +597,20 @@
                                     "slot": "armor",
                                     "operation": "add_multiplied_base",
                                     "amount": -1
+                                },
+                                {
+                                    "attribute": "generic.armor",
+                                    "id": "bdf:armor_boots",
+                                    "slot": "armor",
+                                    "operation": "add_value",
+                                    "amount": 3
+                                },
+                                {
+                                    "attribute": "generic.armor_toughness",
+                                    "id": "bdf:armor_tough_boots",
+                                    "slot": "armor",
+                                    "operation": "add_value",
+                                    "amount": 2
                                 }
                             ]
                         }
@@ -490,6 +637,20 @@
                                     "slot": "armor",
                                     "operation": "add_multiplied_base",
                                     "amount": 1
+                                },
+                                {
+                                    "attribute": "generic.armor",
+                                    "id": "bdf:armor_boots",
+                                    "slot": "armor",
+                                    "operation": "add_value",
+                                    "amount": 3
+                                },
+                                {
+                                    "attribute": "generic.armor_toughness",
+                                    "id": "bdf:armor_tough_boots",
+                                    "slot": "armor",
+                                    "operation": "add_value",
+                                    "amount": 2
                                 }
                             ]
                         }
@@ -516,6 +677,20 @@
                                     "slot": "armor",
                                     "operation": "add_multiplied_base",
                                     "amount": 0.5
+                                },
+                                {
+                                    "attribute": "generic.armor",
+                                    "id": "bdf:armor_boots",
+                                    "slot": "armor",
+                                    "operation": "add_value",
+                                    "amount": 3
+                                },
+                                {
+                                    "attribute": "generic.armor_toughness",
+                                    "id": "bdf:armor_tough_boots",
+                                    "slot": "armor",
+                                    "operation": "add_value",
+                                    "amount": 2
                                 }
                             ]
                         }

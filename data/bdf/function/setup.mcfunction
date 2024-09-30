@@ -24,6 +24,7 @@ scoreboard players set Shield bdf_state 0
 scoreboard players set #2 bdf_math 2
 scoreboard players set #3 bdf_math 3
 scoreboard players set #4 bdf_math 4
+scoreboard players set #30 bdf_math 30
 scoreboard players set #50 bdf_math 50
 
 # Determine fight level
@@ -42,10 +43,11 @@ gamerule forgiveDeadPlayers false
 
 # Modify dragon health
 function bdf:helpers/count_players
-scoreboard players set DragonHealth bdf_math 50
 scoreboard players operation DragonHealth bdf_math *= Level bdf_state
-scoreboard players add DragonHealth bdf_math 200
+scoreboard players add DragonHealth bdf_math 1
 scoreboard players operation DragonHealth bdf_math *= NumPlayers bdf_math
+scoreboard players operation DragonHealth bdf_math *= #30 bdf_math
+scoreboard players add DragonHealth bdf_math 200
 scoreboard players operation MaxHealth bdf_state = DragonHealth bdf_math
 execute store result storage bdf:state MaxHealth int 1 run scoreboard players get DragonHealth bdf_math
 function bdf:helpers/change_dragon_max_health with storage bdf:state
