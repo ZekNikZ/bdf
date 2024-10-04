@@ -1,1 +1,0 @@
-summon minecraft:block_display ~ ~ ~ {block_state:{Name:"minecraft:amethyst_block"},Glowing:1b,glow_color_override:65535,interpolation_duration:100,start_interpolation:0,transformation:[0.707f, -0.500f, 0.500f,-0.500f,0.707f, 0.500f, -0.500f,-0.500f,0.000f, 0.707f, 0.707f,-0.500f,0.000f, 0.000f, 0.000f,1.000f],brightness:{sky:15,block:15},Tags:["bdf_shard"],view_range:0.5f}

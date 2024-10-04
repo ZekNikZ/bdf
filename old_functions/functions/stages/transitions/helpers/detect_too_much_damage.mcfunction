@@ -1,1 +1,0 @@
-execute if score dragon_health bdf_state < min_dragon_health bdf_state run function bdf:stages/transitions/to_1

@@ -1,7 +1,7 @@
 tellraw @p[team=bdf] ["",{"text":"[Better Dragon Fight] ","color":"light_purple"},"Setting up dragon fight..."]
 
 # Load chunks
-execute in minecraft:the_end run forceload add -200 -200 200 200
+execute in minecraft:the_end run forceload add -100 -100 100 100
 
 # Create objectives
 scoreboard objectives add bdf_math dummy
